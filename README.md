@@ -1,6 +1,7 @@
 ## Problem 1 - Recent Posts 
  
 <change you made>
+Change that I made: I added an index to the time stamp to help the order by clause
  
 <screenshot of EXPLAIN ANALYZE>
  
