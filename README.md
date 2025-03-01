@@ -2,6 +2,9 @@
  
 <change you made>
 Change that I made: I added an index to the time stamp to help the order by clause
+<p align="center">
+<img src="./images/IMG_0417.jpg" width="50%">
+</p>
  
 <screenshot of EXPLAIN ANALYZE>
  
