@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.h2database</groupId>
@@ -88,9 +88,9 @@
       <version>${lucene.version}</version>
     </dependency>
     <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-queryparser</artifactId>
-        <version>${lucene.version}</version>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-queryparser</artifactId>
+      <version>${lucene.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -103,10 +103,10 @@
       <version>${osgi.version}</version>
     </dependency>
     <dependency>
-        <groupId>org.osgi</groupId>
-        <artifactId>org.osgi.service.jdbc</artifactId>
-        <version>${osgi.jdbc.version}</version>
-        <scope>provided</scope>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.service.jdbc</artifactId>
+      <version>${osgi.jdbc.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.locationtech.jts</groupId>
@@ -140,6 +140,24 @@
       <artifactId>asm</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- Mockito Core (for unit tests) -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!-- Mockito JUnit 5 Extension (if using JUnit 5) -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
     <!-- END TEST DEPENDENCIES !-->
   </dependencies>
 
@@ -229,16 +247,16 @@
       </resource>
     </resources>
     <testResources>
-  <testResource>
-    <directory>src/test</directory>
-      <includes>
-        <include>org/h2/test/bench/test.properties</include>
-        <include>org/h2/test/script/testScrip.sql</include>
-        <include>org/h2/test/scripts/**/*.sql</include>
-        <include>org/h2/samples/newsfeed.sql</include>
-        <include>org/h2/samples/optimizations.sql</include>
-      </includes>
-    </testResource>
+      <testResource>
+        <directory>src/test</directory>
+        <includes>
+          <include>org/h2/test/bench/test.properties</include>
+          <include>org/h2/test/script/testScrip.sql</include>
+          <include>org/h2/test/scripts/**/*.sql</include>
+          <include>org/h2/samples/newsfeed.sql</include>
+          <include>org/h2/samples/optimizations.sql</include>
+        </includes>
+      </testResource>
     </testResources>
     <plugins>
       <plugin>
